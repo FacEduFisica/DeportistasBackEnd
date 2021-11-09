@@ -6,22 +6,9 @@
 
 ### Construido con
 
-* [Angular](https://angular.io/)
-* [TypeScript](https://www.typescriptlang.org/)
 
 ## Definición
 
 
 ## Instalación
 
-* npm install
-    Este comando es para instalar las dependencias de node
-    ```sh
-  npm install
-    ```
-
-* npm start
-    Este comando es para encender el front
-  ```sh
-    npm start
-  ```
