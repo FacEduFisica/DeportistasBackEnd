@@ -1,0 +1,10 @@
+
+
+node_modules/
+
+/uploads/usuarios/*
+!/uploads/usuarios/.gitkeep
+!/tmp/.gitkeep
+
+/reportes/*
+!/reportes/.gitkeep
