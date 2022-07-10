@@ -24,8 +24,8 @@ process.env.CADUCIDAD_TOKEN = '2h';
 // Datos de acceso para enviar emails
 // =========================
 
-process.env.GMAIL_USERNAME = 'polisgdar@gmail.com';
-process.env.GMAIL_PASSWORD = 'scdwwwbyzektvllp';
+process.env.GMAIL_USERNAME = 'facultadeducacionfisicapoli@gmail.com';
+process.env.GMAIL_PASSWORD = 'yogyjebsnptyrwpz';
 
 // ==========================
 //  SEED de autenticación

@@ -29,17 +29,22 @@ app.use(require("./routes/index"));
 //nombre de BD
 
 mongoose
-    .connect(
-        process.env.URLDB ||
+  .connect(
+    /*process.env.URLDB ||
         "mongodb+srv://ssaldarriaga:edXFNyMD4qCt3yoq@pruebapoliestudiantes-rrx5q.mongodb.net/test", {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        }
+        
+		*/
+    "mongodb+srv://m001-estudiante:v5XigooHmjthSnZC@sandbox.nhcfc.mongodb.net/?retryWrites=true&w=majority",
+    { useNewUrlParser: true, useUnifiedTopology: true }
+  )
+  .then(
+    console.log(
+      " _____________________________________\n|                                     |\n| Conexión exitosa a la Base de Datos |"
     )
-    .then(console.log(" _____________________________________\n|                                     |\n| Conexión exitosa a la Base de Datos |"))
-    .catch((err) => {
-        if (err) throw err;
-    });
+  )
+  .catch((err) => {
+    if (err) throw err;
+  });
 
 mongoose.set("useNewUrlParser", true);
 mongoose.set("useFindAndModify", false);
@@ -47,7 +52,7 @@ mongoose.set("useCreateIndex", true);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log("|     Escuchando al puerto:", PORT, "     |");
-    console.log("|         BACKEND SGDAR POLI          |");
-    console.log("|_____________________________________|");
+  console.log("|     Escuchando al puerto:", PORT, "     |");
+  console.log("|         BACKEND SGDAR POLI          |");
+  console.log("|_____________________________________|");
 });
